@@ -1,0 +1,73 @@
+.contact__page__content {
+  width: calc(80%-204px);
+  height: 100vh;
+  margin-left: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--contact-primary);
+}
+
+.contact__header__title {
+  border: 2px solid var(--contact-primary);
+  height: 120px;
+  width: 60%;
+  font-size: 35px;
+  margin-top: 50px;
+  margin-left: 10px;
+  background-color: var(--contact-secondary);
+  color: var(--contact-primary);
+}
+
+.contact__header__title h1 {
+  margin-top: 52px;
+}
+
+.contact__header__summary {
+  height: 160px;
+  width: 70%;
+  color: var(--contact-secondary);
+  margin-bottom: 5px;
+  font-size: 35px;
+  overflow: hidden;
+}
+
+.contact__header__summary p {
+  font-family: "Dancing Script", cursive;
+  padding: 10px;
+}
+
+.text-overflow {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.contact__details__container {
+  height: 500px;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--contact-secondary);
+}
+
+.contact__social {
+  font-size: 50px;
+}
+
+.contact__social a i {
+  color: var(--contact-primary);
+  margin-right: 10px;
+}
+
+.contact__email {
+  display: flex;
+  font-size: 20px;
+  color: var(--contact-primary);
+}
+
+.contact__email i {
+  margin-right: 10px;
+  font-size: 28px;
+}

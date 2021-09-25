@@ -1,0 +1,93 @@
+.sidebar {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  position: fixed;
+  min-width: 205px;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--sidebar-primary);
+}
+
+.sidebar__profile {
+  width: 100%;
+  padding: 10px;
+  height: 480px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.sidebar__profile__header {
+  height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar__profile__img {
+  width: 35%;
+  align-self: center;
+}
+
+.sidebar__profile__img img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.sidebar__info {
+  width: 65%;
+  padding: 5px;
+}
+
+.sidebar__profile__name {
+  font-size: 17px;
+  margin-left: 5px;
+  color: var(--sidebar-secondary);
+}
+
+.sidebar__info__buttons {
+  gap: 7px;
+  display: grid;
+  margin-left: 5px;
+  letter-spacing: 0.3px;
+  grid-template-rows: 30px 30px;
+  grid-template-columns: 96px 96px;
+}
+
+.sidebar__info__button {
+  padding: 5px;
+  text-align: center;
+  color: var(--sidebar-primary);
+  background-color: var(--sidebar-secondary);
+}
+
+.sidebar__profile__about {
+  padding: 10px;
+  height: 200px;
+  letter-spacing: 2px;
+  color: var(--sidebar-primary);
+  background-color: var(--sidebar-secondary);
+}
+
+.sidebar__bottom {
+  width: 100%;
+  padding: 20px;
+  height: 100px;
+}
+
+.sidebar__bottom__buttons {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar__bottom__button {
+  width: 100px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  letter-spacing: 0.4px;
+  text-align: center;
+  color: var(--sidebar-primary);
+  background-color: var(--sidebar-secondary);
+}

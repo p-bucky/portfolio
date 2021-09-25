@@ -1,0 +1,11 @@
+.footer {
+  height: 50px;
+  width: 100%;
+  text-align: center;
+  background-color: var(--sidebar-secondary);
+  color: var(--sidebar-primary);
+}
+
+.footer h4 {
+  margin-top: 15px;
+}

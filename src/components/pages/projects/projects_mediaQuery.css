@@ -1,0 +1,29 @@
+@media only screen and (max-width: 1033px) {
+  .project__page__content {
+    margin-left: 205px;
+  }
+}
+
+@media only screen and (max-width: 1696px) {
+  .project__header__title {
+    font-size: 30px;
+  }
+  .project__header__title h1 {
+    margin-top: 62px;
+  }
+  .project__header__summary {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 1456px) {
+  .project__header__title {
+    font-size: 25px;
+  }
+  .project__header__title h1 {
+    margin-top: 70px;
+  }
+  .project__header__summary {
+    font-size: 25px;
+  }
+}

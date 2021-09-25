@@ -1,0 +1,29 @@
+@media only screen and (max-width: 1033px) {
+  .skill__page__content {
+    margin-left: 205px;
+  }
+}
+
+@media only screen and (max-width: 1696px) {
+  .skill__header__title {
+    font-size: 30px;
+  }
+  .skill__header__title h1 {
+    margin-top: 62px;
+  }
+  .skill__header__summary {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: 1456px) {
+  .skill__header__title {
+    font-size: 25px;
+  }
+  .skill__header__title h1 {
+    margin-top: 70px;
+  }
+  .skill__header__summary {
+    font-size: 25px;
+  }
+}

@@ -1,0 +1,46 @@
+@media only screen and (max-width: 1810px) {
+  .sidebar__profile {
+    height: 700px;
+  }
+
+  .sidebar__profile__header {
+    height: 300px;
+    flex-direction: column;
+  }
+
+  .sidebar__profile__img {
+    width: 50%;
+    height: 35%;
+    max-width: 100px;
+  }
+
+  .sidebar__profile__img img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .sidebar__info {
+    width: 100%;
+    height: 65%;
+  }
+
+  .sidebar__profile__name {
+    font-size: 13px;
+    margin-left: 0px;
+  }
+
+  .sidebar__info__buttons {
+    margin-left: 0px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .sidebar__profile__about {
+    height: 300px;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .sidebar__profile__name {
+    font-size: 17px;
+  }
+}
