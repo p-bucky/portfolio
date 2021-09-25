@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./sidebar.css";
 import "./sidebar_mediaQuery.css";
-import Img from "../../assets/images/profileImg.jpg";
 import sidebarData from "./sidebarData";
 
 const Sidebar = () => {

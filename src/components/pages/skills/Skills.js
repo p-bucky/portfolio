@@ -1,5 +1,4 @@
 import React from "react";
-import Img from "../../../assets/images/profileImg.jpg";
 import "./skills.css";
 import "./skills_mediaQuery.css";
 import Footer from "../../footer/Footer";

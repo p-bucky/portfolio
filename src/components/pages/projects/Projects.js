@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Img from "../../../assets/images/profileImg.jpg";
 import Footer from "../../footer/Footer";
 import "./projects.css";
 import "./projects_mediaQuery.css";
