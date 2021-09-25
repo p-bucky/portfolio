@@ -1,65 +1,70 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Footer from "../../footer/Footer";
+import educationData from "./educationData";
 import "./education.css";
 import "./education_mediaQuery.css";
 
 const Educations = () => {
+  console.log(educationData.education.map((item) => item.link));
   return (
-    <div class="education__page__content">
-      <div class="education__page__header">
-        <div class="education__header__title">
-          <h1 class="text-overflow">Education I Have Pursued</h1>
+    <div className="education__page__content">
+      <div className="education__page__header">
+        <div className="education__header__title">
+          <h1 className="text-overflow">{educationData.pagedetail.heading}</h1>
         </div>
-        <div class="education__header__summary">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-            totam ut corrupti eligendi repellat incidunt, dolorum illum.
-            Provident, sint nostrum aut consequatur quis eveniet rem voluptates
-            expedita corporis cumque est!
-          </p>
+        <div className="education__header__summary">
+          <p>{educationData.pagedetail.summary}</p>
         </div>
       </div>
-      <div class="education__details__container">
-        <div class="education__detail__section">
-          <h2 class="education__detail__section__title text-overflow">
+      <div className="education__details__container">
+        <div className="education__detail__section">
+          <h2 className="education__detail__section__title text-overflow">
             Education
           </h2>
-          <div class="education__list overflow">
-            <div class="education">
-              <h2 class="education__title text-overflow">
-                High School (Class 10th)
-              </h2>
-              <div class="education__details">
-                <h2 class="education__detail text-overflow">
-                  Maths, Science, Social Science, English, Hindi, It
-                </h2>
-                <Link class="education__result text-overflow" to="#">
-                  71 Percentage
-                </Link>
+          <div className="education__list overflow">
+            {educationData.education.map((item) => (
+              <div key={item.id} className="education">
+                <h2 className="education__title text-overflow">{item.title}</h2>
+                <div className="education__details">
+                  <h2 className="education__detail text-overflow">
+                    {item.detail}
+                  </h2>
+                  <Link
+                    className="education__result text-overflow"
+                    to={{ pathname: item.link }}
+                    target="_blank"
+                  >
+                    {item.marks}
+                  </Link>
+                </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
-
-        <div class="education__detail__section">
-          <h2 class="education__detail__section__title text-overflow">
+        ;
+        <div className="education__detail__section">
+          <h2 className="education__detail__section__title text-overflow">
             Certificates
           </h2>
-          <div class="education__list overflow">
-            <div class="education">
-              <h2 class="education__title text-overflow">
-                React & TypeScript Chrome Extension Development [2021]
-              </h2>
-              <div class="education__details">
-                <h2 class="education__detail text-overflow">
-                  React, Redux, Hooks{" "}
-                </h2>
-                <Link class="education__result text-overflow" to="#">
-                  View Certificate
-                </Link>
+          <div className="education__list overflow">
+            {educationData.certificates.map((item) => (
+              <div key={item.id} className="education">
+                <h2 className="education__title text-overflow">{item.title}</h2>
+                <div className="education__details">
+                  <h2 className="education__detail text-overflow">
+                    {item.detail}
+                  </h2>
+                  <Link
+                    className="education__result text-overflow"
+                    to={{ pathname: item.link }}
+                    target="_blank"
+                  >
+                    View Certificate
+                  </Link>
+                </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>

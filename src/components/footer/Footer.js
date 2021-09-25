@@ -4,7 +4,7 @@ import "./footer.css";
 const Footer = () => {
   return (
     <div className="footer">
-      <h4>footer</h4>
+      <h4>Prashant Jha's Portfolio Website</h4>
     </div>
   );
 };

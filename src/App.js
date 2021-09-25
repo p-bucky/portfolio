@@ -7,8 +7,8 @@ import Contacts from "./components/pages/contacts/Contacts";
 
 function App() {
   return (
-    <Router>
-      <>
+    <>
+      <Router>
         <Sidebar />
         <Switch>
           <Route exact path={["/skills", ""]} component={Skills}></Route>
@@ -16,8 +16,8 @@ function App() {
           <Route exact path="/education" component={Educations}></Route>
           <Route exact path="/contact" component={Contacts}></Route>
         </Switch>
-      </>
-    </Router>
+      </Router>
+    </>
   );
 }
 

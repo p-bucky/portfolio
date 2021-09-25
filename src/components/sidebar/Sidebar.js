@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./sidebar.css";
 import "./sidebar_mediaQuery.css";
 import Img from "../../assets/images/profileImg.jpg";
+import sidebarData from "./sidebarData";
 
 const Sidebar = () => {
   return (
@@ -10,7 +11,7 @@ const Sidebar = () => {
       <div className="sidebar__profile">
         <div className="sidebar__profile__header">
           <div className="sidebar__profile__img">
-            <img src={Img} alt="prashant jha" />
+            <img src={sidebarData.img} alt="prashant jha" />
           </div>
           <div className="sidebar__info">
             <div className="sidebar__profile__name">
@@ -33,18 +34,18 @@ const Sidebar = () => {
           </div>
         </div>
         <div className="sidebar__profile__about">
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem
-            facere quidem, similique cum nemo ex tenetur soluta sunt ad
-            consectetur, impedit eum deserunt laborum.
-          </p>
+          <p>{sidebarData.bio}</p>
         </div>
       </div>
 
       <div className="sidebar__bottom">
         <div className="sidebar__bottom__buttons">
           <div className="sidebar__bottom__resume__button">
-            <Link className="sidebar__bottom__button" to="!#">
+            <Link
+              className="sidebar__bottom__button"
+              to={{ pathname: sidebarData.resume }}
+              target="_blank"
+            >
               Resume
             </Link>
           </div>
