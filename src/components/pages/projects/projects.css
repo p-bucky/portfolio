@@ -1,5 +1,5 @@
 .project__page__content {
-  width: calc(80%-204px);
+  width: 80%;
   height: 100vh;
   margin-left: 20%;
   display: flex;
