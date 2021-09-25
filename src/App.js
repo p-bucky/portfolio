@@ -17,6 +17,12 @@ function App() {
           <Route exact path="/contact" component={Contacts}></Route>
         </Switch>
       </Router>
+      <div className="alert">
+        <h1>
+          Hey, I Haven't Worked On Responsiveness Of This Website, Please Open
+          This Website In Computer. Thankyou for understanding :)
+        </h1>
+      </div>
     </>
   );
 }
