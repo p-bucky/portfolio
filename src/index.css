@@ -12,12 +12,12 @@
   --sidebar-secondary: #f2aa4c;
   --education-primary: #1a7a4c;
   --education-secondary: #101820;
-  --projects-primary: #e2b143;
-  --projects-secondary: #4a171e;
-  --skills-primary: #bd8f4d;
-  --skills-secondary: #191919;
-  --contact-primary: #d7c49e;
-  --contact-secondary: #343148;
+  --projects-primary: #1a7a4c;
+  --projects-secondary: #101820;
+  --skills-primary: #1a7a4c;
+  --skills-secondary: #101820;
+  --contact-primary: #1a7a4c;
+  --contact-secondary: #101820;
 }
 
 a {

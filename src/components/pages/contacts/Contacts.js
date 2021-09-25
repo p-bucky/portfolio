@@ -25,6 +25,9 @@ const Contacts = () => {
             <Link to={{ pathname: contactData.twitter }} target="_blank">
               <i class="fab fa-twitter-square"></i>
             </Link>
+            <Link to={{ pathname: contactData.github }} target="_blank">
+              <i class="fab fa-github-square"></i>
+            </Link>
           </div>
           <div class="contact__email">
             <i class="fas fa-envelope-open-text"></i>
